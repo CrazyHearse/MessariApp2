@@ -13,9 +13,13 @@
 		F62E526B286CB6FC0060BDFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62E5269286CB6FC0060BDFC /* Main.storyboard */; };
 		F62E526D286CB6FD0060BDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62E526C286CB6FD0060BDFC /* Assets.xcassets */; };
 		F62E5270286CB6FD0060BDFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62E526E286CB6FD0060BDFC /* LaunchScreen.storyboard */; };
+		FFDF9749C164CFE84F0786E7 /* Pods_MessariApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1948D00B0341A97FB62DD286 /* Pods_MessariApp2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1948D00B0341A97FB62DD286 /* Pods_MessariApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessariApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AC5E2E77B4AB713DB4C1E5 /* Pods-MessariApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessariApp2.debug.xcconfig"; path = "Target Support Files/Pods-MessariApp2/Pods-MessariApp2.debug.xcconfig"; sourceTree = "<group>"; };
+		AA268431E0E30D30C09A98AC /* Pods-MessariApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessariApp2.release.xcconfig"; path = "Target Support Files/Pods-MessariApp2/Pods-MessariApp2.release.xcconfig"; sourceTree = "<group>"; };
 		F62E5260286CB6FC0060BDFC /* MessariApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessariApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62E5263286CB6FC0060BDFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F62E5265286CB6FC0060BDFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFDF9749C164CFE84F0786E7 /* Pods_MessariApp2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D374410CE3845C113AF1554 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1948D00B0341A97FB62DD286 /* Pods_MessariApp2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F62E5257286CB6FC0060BDFC = {
 			isa = PBXGroup;
 			children = (
 				F62E5262286CB6FC0060BDFC /* MessariApp2 */,
 				F62E5261286CB6FC0060BDFC /* Products */,
+				FCEDB04064A028B77BF03289 /* Pods */,
+				2D374410CE3845C113AF1554 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = MessariApp2;
 			sourceTree = "<group>";
 		};
+		FCEDB04064A028B77BF03289 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81AC5E2E77B4AB713DB4C1E5 /* Pods-MessariApp2.debug.xcconfig */,
+				AA268431E0E30D30C09A98AC /* Pods-MessariApp2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F62E5274286CB6FD0060BDFC /* Build configuration list for PBXNativeTarget "MessariApp2" */;
 			buildPhases = (
+				FFF1D963430102E2324C87CD /* [CP] Check Pods Manifest.lock */,
 				F62E525C286CB6FC0060BDFC /* Sources */,
 				F62E525D286CB6FC0060BDFC /* Frameworks */,
 				F62E525E286CB6FC0060BDFC /* Resources */,
+				4D0F68612E375F36F3F32B2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D0F68612E375F36F3F32B2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessariApp2/Pods-MessariApp2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessariApp2/Pods-MessariApp2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MessariApp2/Pods-MessariApp2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFF1D963430102E2324C87CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MessariApp2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F62E525C286CB6FC0060BDFC /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		F62E5275286CB6FD0060BDFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81AC5E2E77B4AB713DB4C1E5 /* Pods-MessariApp2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		F62E5276286CB6FD0060BDFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA268431E0E30D30C09A98AC /* Pods-MessariApp2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
